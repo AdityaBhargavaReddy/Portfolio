@@ -24,5 +24,7 @@ function App() {
 
 export default App;
 
+git push --set-upstream origin main
+git push --set-upstream https://github.com/AdityaBhargavaReddy/Portfolio main
 
 
