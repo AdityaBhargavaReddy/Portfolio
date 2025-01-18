@@ -1,32 +1,47 @@
-.name-section{
-    padding: 20px;
-    padding-top: 0px;
-    display: flex;
-    justify-content: start;
-}
 
-.span{
-    font-size: 40px;
-}
-
-.name{
-    font-size: 24px;
-}
-
-.role{
-    padding-top: 29px;
-    padding-left: 10px;
-}
-
-.logo{
-    height: 100px;
-}
 
 .navigation-bar{
     position:fixed;
     top: 0;
+     padding: 20px;
     width: 100%;
-    background: linear-gradient(to top right, red, yellow, green, blue);
+    padding-left: 30px;
+    padding-right: 30PX;
+    display: flex;
+    width: 100vw;
+    box-sizing:border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;}
 
+.inner-options{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
+p:hover{
+    color: rgb(157, 0, 255);
+    cursor: pointer;
+    
+}
+
+p{
+    padding-right: 30px;
+}
+.name{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.Portfolio{
+    position: relative;
+    margin-top: -10px;
+    font-family: Rubik Dirt, cursive;
+    font-size: 16px;
+}
+
+*{
+    margin:0px;
+    padding: 0PX;
 }

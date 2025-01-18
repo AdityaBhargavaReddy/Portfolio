@@ -4,15 +4,17 @@ import './app.css'
 class Header extends Component {
     render(){
         return(
-            <div>
                 <nav className="navigation-bar">
                     <div className="name-section">
-                        <img className="logo" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Logo"/>
-                        <h1 className="name"><span className="span">A</span>di</h1>
-                        <p className="role">Full Stack Developer</p>
+                        <h1 className="name">Aditya Bhargava Reddy Karri</h1>  
+                        <h1 className="Portfolio">Portfolio</h1>                  </div>
+                    <div className="inner-options">
+                    <p>Home</p>
+                    <p>Skills</p>
+                    <p>Projects</p>
+                    <p>About</p>
                     </div>
                 </nav>
-            </div>
         )
     }
 }
