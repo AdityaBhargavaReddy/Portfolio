@@ -1,7 +1,7 @@
 
 
 .navigation-bar{
-    position:fixed;
+    position:relative;
     top: 0;
      padding: 20px;
     width: 100%;
@@ -9,6 +9,7 @@
     padding-right: 30PX;
     display: flex;
     width: 100vw;
+    background-color: antiquewhite;
     box-sizing:border-box;
     flex-direction: row;
     align-items: center;
@@ -20,8 +21,8 @@
         justify-content: space-around;
     }
 
-p:hover{
-    color: rgb(157, 0, 255);
+.link p:hover{
+    color: blueviolet;
     cursor: pointer;
     
 }
