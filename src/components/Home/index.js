@@ -1,18 +1,20 @@
 import Header from '../Header';
 import './app.css';
+import Footer from '../Footer';
+import{FaDownload} from 'react-icons/fa'
 
 const Home = () =>{
   const skills = [
-    { name: 'HTML', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png' },
+    { name: 'HTML', logo: 'https://www.onlinecasinos.org.uk/wp-content/uploads/CASINO/Articles/html5-logo.png' },
     { name: 'CSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg' },
-    { name: 'JavaScript', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/69/JavaScript-logo.png' },
+    { name: 'JavaScript', logo: 'https://freesvg.org/img/js_logo.png' },
     { name: 'Node.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' },
-    { name: 'Express.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Expressjs.png' },
+    { name: 'Express.js', logo: 'https://kinsta.com/wp-content/uploads/2022/04/express-1.png' },
     { name: 'React', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
     { name: 'C', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png' },
-    { name: 'C++', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language_logo.svg' },
-    { name: 'SQL', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/SQL-Server-Logo.svg' },
-    { name: 'NoSQL', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Nosql_database_icon_2015.png' },
+    { name: 'C++', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg' },
+    { name: 'SQL', logo: 'https://logodix.com/logo/542135.jpg ' },
+    { name: 'NoSQL', logo: 'https://cdn.ourcodeworld.com/public-media/articles/articleocw-5d78ebb022d1e.webp' },
     { name: 'Python', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' },
   ];
   
@@ -78,8 +80,11 @@ const Home = () =>{
           </div>
         ))}
       </div>
-    </div>
 
+      <button style={{height:"30px",padding:"5px" ,marginTop:"60px",marginBottom:"30px",backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}><a style={{color:"white"}} href="https://drive.google.com/file/d/109FhTASGhJ57ryRxBHtLLPdpuPAePEwV/view?usp=sharing" > <FaDownload/> Resume</a></button>
+      
+    </div>
+    <Footer/>
 </div>
 );
 }

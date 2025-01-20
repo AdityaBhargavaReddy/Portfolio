@@ -1,0 +1,54 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    height: 50vh;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width:100%;
+    height: 100px;
+    background-color: rgb(135, 181, 255);
+
+    background-image: linear-gradient(to top,rgb(87, 109, 250),rgb(141, 183, 252));
+    padding: 30px 50px;
+}
+
+.c{
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+
+}
+
+li:hover{
+    transform: translateY(-10px);
+}
+
+.wave{
+    width: 101%;
+    height: 360px;
+ 
+    position: absolute;
+    background: url('https://res.cloudinary.com/dosqewmuo/image/upload/v1737395516/wave_aymzfy.png');
+    animation: animateWave 3.5s linear infinite;
+    background-size: 1000px 130px;
+    opacity: 0.58;
+
+}
+
+@keyframes animateWave {
+    0%{
+        background-position-x:1000px ;
+    }
+    100%{
+        background-position-x:0px ;
+    }
+}

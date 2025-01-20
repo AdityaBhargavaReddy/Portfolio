@@ -9,6 +9,7 @@ img {
     box-sizing: border-box;
     width: 400px;
   border-radius: 300px;
+  opacity: 0.95;
   
 }
 .first-inner-container{
