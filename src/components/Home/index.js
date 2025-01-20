@@ -1,19 +1,87 @@
 import Header from '../Header';
-import './app.css'
-const Home = () => (
-  <div>
+import './app.css';
+
+const Home = () =>{
+  const skills = [
+    { name: 'HTML', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png' },
+    { name: 'CSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg' },
+    { name: 'JavaScript', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/69/JavaScript-logo.png' },
+    { name: 'Node.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' },
+    { name: 'Express.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Expressjs.png' },
+    { name: 'React', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
+    { name: 'C', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png' },
+    { name: 'C++', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language_logo.svg' },
+    { name: 'SQL', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/SQL-Server-Logo.svg' },
+    { name: 'NoSQL', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Nosql_database_icon_2015.png' },
+    { name: 'Python', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' },
+  ];
+  
+  
+  
+  
+  return(
+  <div style={{margin:"0px",width:"100vw",boxSizing:"border-box"}}>
+  <div className='back'>
     <Header />
     <div className='first-part'>
-    <div className='first-inner-container'>
-    <h1>Hello, I'm Aditya Bhargava Reddy Karri, <br/>and I'm a MERN Stack Developer</h1>
-    
-    <p>
-      I'm a MERN Stack Developer with extensive experience for over 1 year. My expertise includes web design,
-      frontend design, and fetching data from backends, among many other skills.
-    </p></div><img src="https://res.cloudinary.com/dosqewmuo/image/upload/v1737209329/79ddc0ba-4ecd-4440-9efa-799626440e06_ej1z8c.jpg" alt="Aditya Bhargava Reddy Karri" />
-    
+      <div className='first-inner-container'>
+        <h1 style={{marginBottom:"40px"}}>
+          Hello, I'm Aditya Bhargava Reddy Karri, <br /> and I'm a MERN Stack Developer
+        </h1>
+        <p>
+        I'm a skilled MERN Stack Developer with over a year of experience in building dynamic and responsive web applications. My expertise spans web design, front-end development, and seamlessly integrating back-end data, and many more...
+        </p>
+      </div>
+      <img 
+        src="https://res.cloudinary.com/dosqewmuo/image/upload/c_crop,ar_1:1/v1737209329/c3244c78-3d9c-4f99-b2e2-e61eba537459_gbytdr.jpg"
+        alt="Aditya Bhargava Reddy Karri"
+      />
+    </div>
+    <div style={{textAlign:"center"}} >
+      <button style={{height:"30px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
     </div>
   </div>
+
+  <div  className='second-inner-container' style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"60vh",alignItems:"center",alignSelf:"center"}}>
+  <h2 className='second-head'>Let’s Create Something Amazing Together!</h2>
+  <p2 style={{textAlign:"center",marginTop:"30px"}} className="second-para">Check out my projects or get in touch to discuss your idea.</p2>
+  <div style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"50vh",alignItems:"center"}}>
+  <button style={{height:"30px",padding:"5px" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}><a style={{color:"white"}} href="mailto:bhargavareddy2005@gmail.com" >Contact Me</a></button>
+  
+  </div>
+  
+</div>
+<div className='second-inner-container third' style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"60vh",alignItems:"center",alignSelf:"center"}}>
+
+      <h2 className='second-head third-head'>About Me</h2>
+      <hr style={{height:"2px",backgroundColor:"black"}}/>
+      <p style={{marginTop:"30px"}} className="third-para">
+        I am an enthusiastic and self-motivated MERN Stack Developer with a passion for creating modern, user-friendly web applications. 
+        Proficient in React for building dynamic front-end interfaces and experienced in managing back-end operations using Node.js, Express, and MongoDB, 
+        I focus on delivering scalable and efficient solutions.
+      </p>
+      <p className="third-para">
+        Always eager to learn and adapt, I thrive in collaborative environments and enjoy taking on challenges that push me to grow both personally and professionally. 
+        My goal is to contribute to innovative projects that make a meaningful impact while continuously expanding my technical expertise.
+      </p>
+      <div style={{textAlign:"center",marginTop:"40px",}} >
+      <button style={{height:"30px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
+    </div>
+    </div>
+    <div className="skills-container">
+      <h2 className="skills-title">My Skills</h2>
+      <div className="skills-list">
+        {skills.map((skill, index) => (
+          <div className="skill-item" key={index}>
+            <img src={skill.logo} alt={`${skill.name} logo`} className="skill-logo" />
+            <p className="skill-name">{skill.name}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+</div>
 );
+}
 
 export default Home;

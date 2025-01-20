@@ -9,7 +9,7 @@
     padding-right: 30PX;
     display: flex;
     width: 100vw;
-    background-color: antiquewhite;
+    background-image: linear-gradient(to right top, rgb(154, 214, 252) ,rgb(203, 229, 255), rgb(245, 233, 207));
     box-sizing:border-box;
     flex-direction: row;
     align-items: center;
@@ -22,7 +22,9 @@
     }
 
 .link p:hover{
-    color: blueviolet;
+
+    font-size:15px;
+    color: rgb(231, 171, 252);
     cursor: pointer;
     
 }
