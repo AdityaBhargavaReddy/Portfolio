@@ -10,18 +10,18 @@ const Footer=()=>(
         <footer>
         <ul style={{ listStyleType: 'none', padding: 0, display: 'flex', gap: '10px'}}>
       <li className="c" >
-        <a href="https://www.instagram.com/aditya_bhargava_reddy?igsh=MXhtNmk1YWc1bWxqag==" target="_blank" >
+        <a href="https://www.instagram.com/aditya_bhargava_reddy?igsh=MXhtNmk1YWc1bWxqag=="   rel="noreferrer" target="_blank" >
           <FaInstagram size={30} color="#E1306C" />
         </a>
       </li>
       <li className="c" >
-        <a href="https://www.linkedin.com/in/aditya-bhargava-reddy-karri/?originalSubdomain=in" target="_blank" >
+        <a href="https://www.linkedin.com/in/aditya-bhargava-reddy-karri/?originalSubdomain=in"  rel="noreferrer" target="_blank" >
           <FaLinkedin size={30} color="#0077B5" />
         </a>
       </li>
     
       <li className="c" >
-        <a href="https://github.com/AdityaBhargavaReddy" target="_blank" >
+        <a href="https://github.com/AdityaBhargavaReddy"  rel="noreferrer" target="_blank" >
           <FaGithub  size={30} color="black"/>
         </a>
       </li>

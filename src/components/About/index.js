@@ -43,7 +43,7 @@ const About = () => {
 <div style={{background: "#f9f9f9",boxShadow:"none"}} className="about-container">
       <h2>Contact</h2>
       <p style={{fontFamily:"Roboto",fontSize:"20px"}}>
-        Feel free to reach out to me via <a href="mailto:bhargavareddy2005@gamil.com">Mail</a> or connect with me on <a href="https://www.linkedin.com/in/aditya-bhargava-reddy-karri/?originalSubdomain=in" target="_blank">Linkedin</a>.
+        Feel free to reach out to me via <a href="mailto:bhargavareddy2005@gamil.com"  rel="noreferrer">Mail</a> or connect with me on <a href="https://www.linkedin.com/in/aditya-bhargava-reddy-karri/?originalSubdomain=in"  rel="noreferrer" target="_blank">Linkedin</a>.
       </p>
     </div>
     </div>
