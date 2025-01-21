@@ -1,6 +1,6 @@
-import Header from '../Header';
+
 import './app.css';
-import Footer from '../Footer';
+
 import{FaDownload} from 'react-icons/fa'
 
 const Home = () =>{
