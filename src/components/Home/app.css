@@ -137,3 +137,33 @@ img {
     box-sizing: border-box;
   }
   
+
+
+
+
+
+  .typig-effect{
+    
+      display: inline-block;
+      overflow: hidden;
+      border-right: 2px solid black; 
+      border-width: 18px;
+      white-space: nowrap;
+      font-size:50px;
+      letter-spacing: 2px;
+      animation: typing 4s steps(20) forwards, blink 1s step-end infinite;
+    }
+    @keyframes typing {
+      from {
+          width: 0;
+      }
+      to {
+          width: 22ch; 
+      }
+  }
+  @keyframes blink {
+    50% {
+        border-width: 18px;
+        border-color: #b4d8f1;
+    }
+  }

@@ -11,11 +11,13 @@ const Home = () =>{
     { name: 'Node.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' },
     { name: 'Express.js', logo: 'https://kinsta.com/wp-content/uploads/2022/04/express-1.png' },
     { name: 'React', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
+    {name: 'Hooks', logo: 'https://velog.velcdn.com/images/kwonh/post/bba244e8-1e64-49c9-85df-7bf4e4c0fdb3/hook-logo.png' },
     { name: 'C', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png' },
     { name: 'C++', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg' },
     { name: 'SQL', logo: 'https://logodix.com/logo/542135.jpg ' },
     { name: 'NoSQL', logo: 'https://cdn.ourcodeworld.com/public-media/articles/articleocw-5d78ebb022d1e.webp' },
     { name: 'Python', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' },
+   
   ];
   
   
@@ -27,7 +29,7 @@ const Home = () =>{
     <div className='first-part'>
       <div className='first-inner-container'>
         <h1 style={{marginBottom:"40px"}}>
-          Hello, I'm Aditya Bhargava Reddy Karri, <br /> and I'm a MERN Stack Developer
+          Hello, I'm Aditya Bhargava Reddy Karri, <br /> and I'm a <br/><span className='typig-effect'> MERN Stack Developer</span>
         </h1>
         <p>
         I'm a skilled MERN Stack Developer with over a year of experience in building dynamic and responsive web applications. My expertise spans web design, front-end development, and seamlessly integrating back-end data, and many more...
