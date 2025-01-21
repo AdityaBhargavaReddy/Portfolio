@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Experience from './components/Experience';
 
 class App extends Component {
   render() {
@@ -18,6 +19,8 @@ class App extends Component {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/skills" element={<Skills />} />
           <Route exact path="/projects" element={<Projects />} />
+          <Route exact path="/experience" element={<Experience />} />
+          
         </Routes>
         <Footer/>
       </BrowserRouter>

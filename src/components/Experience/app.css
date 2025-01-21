@@ -1,0 +1,155 @@
+/* Container Styles */
+.a{
+    background-image: linear-gradient(to top , rgb(251, 249, 244),rgb(198, 212, 244), rgb(154, 214, 252) );
+    padding-top: 40px;
+}
+
+.experience-container {
+    padding: 30px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    max-width: 95%;
+    margin: 60px;
+    
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 28px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #3498db;
+    margin: 10px auto 0;
+    border-radius: 5px;
+  }
+  
+  /* Experience Cards */
+  .experience-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .experience-card {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Icons */
+  .icon-container {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3498db;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .experience-icon,
+  .achievement-icon {
+    font-size: 24px;
+  }
+  
+  /* Experience Details */
+  .experience-details {
+    flex-grow: 1;
+  }
+  
+  .job-title {
+    font-size: 20px;
+    color: #34495e;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .company-location {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+  }
+  
+  .responsibilities {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #2c3e50;
+  }
+  
+  .responsibilities li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  
+  /* Achievements */
+  .achievement-card {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .achievements-list {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #27ae60;
+  }
+  
+  .achievements-list li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  
+  strong {
+    color: #e74c3c;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience-card,
+    .achievement-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .icon-container {
+      margin-bottom: 15px;
+    }
+  }
+  
+
+  .c{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+    margin-left: 0px;
+    
+}

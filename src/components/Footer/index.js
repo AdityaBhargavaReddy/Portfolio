@@ -10,7 +10,7 @@ const Footer=()=>(
         <footer>
         <ul style={{ listStyleType: 'none', padding: 0, display: 'flex', gap: '10px'}}>
       <li className="c" >
-        <a href="https://www.instagram.com/aditya_bhargava_reddy?igsh=MXhtNmk1YWc1bWxqag=="   rel="noreferrer" target="_blank" >
+        <a style={{}} href="https://www.instagram.com/aditya_bhargava_reddy?igsh=MXhtNmk1YWc1bWxqag=="   rel="noreferrer" target="_blank" >
           <FaInstagram size={30} color="#E1306C" />
         </a>
       </li>

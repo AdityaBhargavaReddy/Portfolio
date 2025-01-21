@@ -4,7 +4,7 @@ import {FaDesktop,FaServer, FaDatabase,FaCode, FaGithub,FaCloudUploadAlt,FaProje
 
 const About = () => {
   return (
-   <div style={{backgroundColor:"#f9f9f9"}}>
+   <div className='a'>
    <div className="about-container">
       <h1>About Me</h1>
    <div style={{marginTop:"50px",fontSize:"20px",padding:"10px"}}>
@@ -34,10 +34,10 @@ const About = () => {
 <div className="about-container">
       <h2>Interests</h2>
       <ul className="interests-list" style={{display:"flex",flexWrap:"wrap",listStyle:'none'}}>
-        <li style={{width:"45vw",marginBottom:"30px",textAlign:"center"}}><FaHamburger/><span style={{width:"5px"}}></span> Eating</li> 
-        <li style={{width:"45vw",marginBottom:"30px",textAlign:"center"}}><FaCode /><span style={{width:"5px"}}></span> Coding</li>
-        <li style={{width:"45vw",marginBottom:"30px",textAlign:"center"}}><FaGamepad/><span style={{width:"5px"}}></span> Playing</li>
-        <li style={{width:"45vw",marginBottom:"30px",textAlign:"center"}}><FaBed/><span style={{width:"5px"}}></span> <span style={{width:"5px"}}></span> Sleeping</li>
+        <li style={{width:"40vw",marginBottom:"30px",textAlign:"center"}}><FaHamburger/><span style={{width:"5px"}}></span> Eating</li> 
+        <li style={{width:"40vw",marginBottom:"30px",textAlign:"center"}}><FaCode /><span style={{width:"5px"}}></span> Coding</li>
+        <li style={{width:"40vw",marginBottom:"30px",textAlign:"center"}}><FaGamepad/><span style={{width:"5px"}}></span> Playing</li>
+        <li style={{width:"42vw",marginBottom:"30px",textAlign:"center"}}><FaBed/><span style={{width:"5px"}}></span> <span style={{width:"5px"}}></span> Sleeping</li>
       </ul>
 </div>
 <div style={{background: "#f9f9f9",boxShadow:"none"}} className="about-container">

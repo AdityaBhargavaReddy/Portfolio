@@ -2,49 +2,11 @@
 import './app.css'
 
 const timelineItemsList = [
-  {
-    id: 'c6aad2fb-7673-45cf-9606-a335acc0cf4b',
-    categoryId: 'COURSE',
-    title: '10 SEPTEMBER 2023',
-    courseTitle: 'Static Website',
-    description:
-      'Build your own personal portfolio website and a website to host conferences and events.  Publish your website and share it with your friends, family and beyond.',
-    duration: '10 days',
-    tagsList: [
-      {
-        id: 'c31b2ad8-f766-11eb-9a03-0242ac130003',
-        name: 'HTML Elements',
-      },
-      {
-        id: 'c31b2d08-f766-11eb-9a03-0242ac130003',
-        name: 'Class Attribute',
-      },
-      {
-        id: 'c31b2dee-f766-11eb-9a03-0242ac130003',
-        name: 'Text Properties',
-      },
-      {
-        id: 'c31b2eb6-f766-11eb-9a03-0242ac130003',
-        name: 'Bootstrap',
-      },
-      {
-        id: 'c31b2f6a-f766-11eb-9a03-0242ac130003',
-        name: 'Box Properties',
-      },
-      {
-        id: 'c31b347e-f766-11eb-9a03-0242ac130003',
-        name: 'Layout',
-      },
-      {
-        id: 'c31b358c-f766-11eb-9a03-0242ac130003',
-        name: 'Flexbox',
-      },
-    ],
-  },
+  
   {
     id: 'a19d93d6-bdac-479e-b554-974ef9e6e66c',
     categoryId: 'PROJECT',
-    title: '21 SEPTEMBER 2020',
+    title: '21 SEPTEMBER 2023',
     projectTitle: 'Tourism Website',
     description:
       'A tourism website enables the user to browse through the images of popular destinations.',
@@ -52,93 +14,16 @@ const timelineItemsList = [
     duration: '1 hr',
     projectUrl: 'https://adityastaticweb.ccbp.tech/',
   },
-  {
-    id: '40b82899-fdf7-4a3e-a43a-41a9917b4582',
-    categoryId: 'COURSE',
-    title: '5 NOVEMBER 2023',
-    courseTitle: 'Responsive Website',
-    description:
-      'Build a responsive website that appears beautifully on the screen of any size. Develop a personal portfolio website, an E-commerce product listing website and a website to host conferences and events.',
-    duration: '12 days',
-    tagsList: [
-      {
-        id: '551e2b7e-f767-11eb-9a03-0242ac130003',
-        name: 'Responsive Web Design',
-      },
-      {
-        id: '551e2de0-f767-11eb-9a03-0242ac130003',
-        name: 'Multiple Layouts',
-      },
-      {
-        id: '551e3114-f767-11eb-9a03-0242ac130003',
-        name: 'Column Wrapping',
-      },
-      {
-        id: '551e31e6-f767-11eb-9a03-0242ac130003',
-        name: 'Navbar',
-      },
-      {
-        id: '551e32a4-f767-11eb-9a03-0242ac130003',
-        name: 'Designing Layouts',
-      },
-      {
-        id: '551e334e-f767-11eb-9a03-0242ac130003',
-        name: 'Inheritance',
-      },
-      {
-        id: '551e3402-f767-11eb-9a03-0242ac130003',
-        name: 'CSS Gradients',
-      },
-    ],
-  },
+
   {
     id: 'ae2ede68-af77-427c-817c-0ce4beeb69c7',
     categoryId: 'PROJECT',
-    title: '7 NOVEMBER 2021',
+    title: '7 NOVEMBER 2023',
     projectTitle: 'Food Munch',
     description: 'Food Much Website is a user-centric food tech website.',
     imageUrl: 'https://assets.ccbp.in/frontend/react-js/projects-r2-img.png',
     duration: '2 hrs',
     projectUrl: 'https://adiresponsive.ccbp.tech/',
-  },
-  {
-    id: '4938c3d1-81cd-4729-9d2c-dcd50796aa4d',
-    categoryId: 'COURSE',
-    title: '30 JANUARY 2024',
-    courseTitle: 'Dynamic Website',
-    description:
-      'Learn the fundamental concepts in JavaScript and apply them to build dynamic and interactive web applications like Counter, Guessing Game, Chat Web app, E-commerce web app, etc.',
-    duration: '20 days',
-    tagsList: [
-      {
-        id: 'd4743c06-f767-11eb-9a03-0242ac130003',
-        name: 'Declaring Variables',
-      },
-      {
-        id: 'd4743ecc-f767-11eb-9a03-0242ac130003',
-        name: 'Comparison Operator',
-      },
-      {
-        id: 'd4743fe4-f767-11eb-9a03-0242ac130003',
-        name: 'Functions',
-      },
-      {
-        id: 'd47440d4-f767-11eb-9a03-0242ac130003',
-        name: 'Object',
-      },
-      {
-        id: 'd474434a-f767-11eb-9a03-0242ac130003',
-        name: 'DOM Manipulations',
-      },
-      {
-        id: 'd474443a-f767-11eb-9a03-0242ac130003',
-        name: 'Loops',
-      },
-      {
-        id: 'd4744516-f767-11eb-9a03-0242ac130003',
-        name: 'Local Storage',
-      },
-    ],
   },
   {
     id: 'd6c4b3a5-7b1d-4906-aca8-823f44129004',
@@ -163,45 +48,7 @@ const timelineItemsList = [
     duration: '4 hrs',
     projectUrl: 'https://ccbpadiwiki.ccbp.tech/',
   },
-  {
-    id: 'd80781c3-980e-4ab9-96ca-9ad1a9cdf93d',
-    categoryId: 'COURSE',
-    title: '15 MARCH 2021',
-    courseTitle: 'RWD using Flexbox',
-    description:
-      'Learn to develop responsive layouts using CSS Flexbox and CSS Media Queries.',
-    duration: '7 days',
-    tagsList: [
-      {
-        id: '34e6b208-f768-11eb-9a03-0242ac130003',
-        name: 'Sizing Elements',
-      },
-      {
-        id: '34e6b460-f768-11eb-9a03-0242ac130003',
-        name: 'Flexbox Layout',
-      },
-      {
-        id: '34e6b76c-f768-11eb-9a03-0242ac130003',
-        name: 'Min & Max sizes',
-      },
-      {
-        id: '34e6b83e-f768-11eb-9a03-0242ac130003',
-        name: 'Media Query Syntax',
-      },
-      {
-        id: '34e6b8fc-f768-11eb-9a03-0242ac130003',
-        name: 'Logical Operators',
-      },
-      {
-        id: '34e6ba28-f768-11eb-9a03-0242ac130003',
-        name: 'CSS box-sizing property',
-      },
-      {
-        id: '34e6baf0-f768-11eb-9a03-0242ac130003',
-        name: 'Media Features',
-      },
-    ],
-  },
+  
   {
     id: '7bc3f006-f0f1-4574-924b-17c480556727',
     categoryId: 'PROJECT',
@@ -266,6 +113,60 @@ const timelineItemsList = [
   },
 ]
 
-const Projects = () =>(<h1>Pro</h1>)
 
-export default Projects
+const groupProjectsByYear = (projects) => {
+  return projects.reduce((acc, project) => {
+    const year = new Date(project.title).getFullYear();
+    if (!acc[year]) acc[year] = [];
+    acc[year].push(project);
+    return acc;
+  }, {});
+};
+
+const Projects = () => {
+  const projects = timelineItemsList.filter(
+    (item) => item.categoryId === 'PROJECT'
+  );
+  const groupedProjects = groupProjectsByYear(projects);
+
+  return (
+    <div className="projects-container">
+      <h1 className="projects-title">Projects</h1>
+      {Object.keys(groupedProjects)
+        .sort((a, b) => a - b)
+        .map((year) => (
+          <div key={year} className="projects-year-group">
+            <h2 className="year-title">{year}</h2>
+            <div className="projects-list">
+              {groupedProjects[year].map((project) => (
+                <div key={project.id} className="project-card">
+                  <img style={{borderRadius:"0px",background:"cover"}}
+                    src={project.imageUrl}
+                    alt={project.projectTitle}
+                    className="project-image"
+                  />
+                  <div className="project-details">
+                    <h3 className="project-title">{project.projectTitle}</h3>
+                    <p className="project-description">{project.description}</p>
+                    <p className="project-duration">
+                      Duration: {project.duration}
+                    </p>
+                    <a
+                      href={project.projectUrl}
+                      className="project-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Project
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+    </div>
+  );
+};
+
+export default Projects;

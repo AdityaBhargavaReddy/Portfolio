@@ -32,7 +32,7 @@ const Home = () =>{
           Hello, I'm Aditya Bhargava Reddy Karri, <br /> and I'm a <br/><span className='typig-effect'> MERN Stack Developer</span>
         </h1>
         <p>
-        I'm a skilled MERN Stack Developer with over a year of experience in building dynamic and responsive web applications. My expertise spans web design, front-end development, and seamlessly integrating back-end data, and many more...
+        I'm a skilled <b>MERN Stack Developer</b> with over a year of experience in building dynamic and responsive web applications. My expertise spans web design, front-end development, and seamlessly integrating back-end data, and many more...
         </p>
       </div>
       <img 
@@ -41,7 +41,7 @@ const Home = () =>{
       />
     </div>
     <div style={{textAlign:"center"}} >
-      <button style={{height:"30px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
+      <button style={{height:"35px",width:"100px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
     </div>
   </div>
 
@@ -49,7 +49,7 @@ const Home = () =>{
   <h2 className='second-head'>Let’s Create Something Amazing Together!</h2>
   <p2 style={{textAlign:"center",marginTop:"30px"}} className="second-para">Check out my projects or get in touch to discuss your idea.</p2>
   <div style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"50vh",alignItems:"center"}}>
-  <button style={{height:"30px",padding:"5px" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}><a style={{color:"white"}} href="mailto:bhargavareddy2005@gmail.com" >Contact Me</a></button>
+  <button style={{height:"35px",width:"100px",padding:"5px" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}><a style={{color:"white"}} href="mailto:bhargavareddy2005@gmail.com" >Contact Me</a></button>
   
   </div>
   
@@ -59,21 +59,21 @@ const Home = () =>{
       <h2 className='second-head third-head'>About Me</h2>
       <hr style={{height:"2px",backgroundColor:"black"}}/>
       <p style={{marginTop:"30px"}} className="third-para">
-        I am an enthusiastic and self-motivated MERN Stack Developer with a passion for creating modern, user-friendly web applications. 
+        I am an enthusiastic and self-motivated <b>MERN Stack Developer</b> with a passion for creating modern, user-friendly web applications. 
         Proficient in React for building dynamic front-end interfaces and experienced in managing back-end operations using Node.js, Express, and MongoDB, 
         I focus on delivering scalable and efficient solutions.
       </p>
       <p className="third-para">
-        Always eager to learn and adapt, I thrive in collaborative environments and enjoy taking on challenges that push me to grow both personally and professionally. 
+       Working as <b>Teaching Assistant at NxtWave</b>, I play a pivotal role in facilitating the learning process for students pursuing technical skills. 
         My goal is to contribute to innovative projects that make a meaningful impact while continuously expanding my technical expertise.
       </p>
       <div style={{textAlign:"center",marginTop:"40px",}} >
-      <button style={{height:"30px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
+      <button style={{height:"35px",width:"100px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
     </div>
     </div>
-    <div className="skills-container">
+    <div className="skills-container" style={{boxSizing:"border-box",overflow:"hidden"}}>
       <h2 className="skills-title">My Skills</h2>
-      <div className="skills-list">
+      <div className="skills-list" style={{marginLeft:"150px"}}>
         {skills.map((skill, index) => (
           <div className="skill-item" key={index}>
             <img src={skill.logo} alt={`${skill.name} logo`} className="skill-logo" />
@@ -82,7 +82,7 @@ const Home = () =>{
         ))}
       </div>
 
-      <button style={{height:"30px",padding:"5px" ,marginTop:"60px",marginBottom:"30px",backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}><a style={{color:"white"}} href="https://drive.google.com/file/d/109FhTASGhJ57ryRxBHtLLPdpuPAePEwV/view?usp=sharing" > <FaDownload/> Resume</a></button>
+      <button style={{height:"35px",width:"100px",padding:"5px" ,marginTop:"60px",marginBottom:"30px",backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}><a style={{color:"white"}} href="https://drive.google.com/file/d/109FhTASGhJ57ryRxBHtLLPdpuPAePEwV/view?usp=sharing" > <FaDownload/> Resume</a></button>
       
     </div>
 </div>

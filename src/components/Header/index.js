@@ -6,7 +6,7 @@ import { GiSkills } from 'react-icons/gi';
 import {Link} from 'react-router-dom'
 class Header extends Component {
     render(){
-        return(<div>
+        return(<div >
                 <nav className="navigation-bar">
                     <div className="name-section">
                         <h1 className="name">Aditya Bhargava Reddy Karri</h1>  
