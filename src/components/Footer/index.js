@@ -8,19 +8,19 @@ const Footer=()=>(
        <div className='wave'></div>
        <div className=' wave1 '></div>
         <footer>
-        <ul style={{ listStyleType: 'none', padding: 0, display: 'flex', gap: '10px'}}>
-      <li className="c" >
-        <a style={{}} href="https://www.instagram.com/aditya_bhargava_reddy?igsh=MXhtNmk1YWc1bWxqag=="   rel="noreferrer" target="_blank" >
+        <ul style={{ listStyleType: 'none', padding: 0, display: 'flex',justifyContent:"center", gap: '10px'}}>
+      <li style={{marginLeft:"40px"}} className="c" >
+        <a  href="https://www.instagram.com/aditya_bhargava_reddy?igsh=MXhtNmk1YWc1bWxqag=="   rel="noreferrer" target="_blank" >
           <FaInstagram size={30} color="#E1306C" />
         </a>
       </li>
-      <li className="c" >
+      <li style={{marginLeft:"40px"}}className="c" >
         <a href="https://www.linkedin.com/in/aditya-bhargava-reddy-karri/?originalSubdomain=in"  rel="noreferrer" target="_blank" >
           <FaLinkedin size={30} color="#0077B5" />
         </a>
       </li>
     
-      <li className="c" >
+      <li style={{marginLeft:"40px"}} className="c" >
         <a href="https://github.com/AdityaBhargavaReddy"  rel="noreferrer" target="_blank" >
           <FaGithub  size={30} color="black"/>
         </a>
