@@ -28,7 +28,7 @@ footer{
 
 }
 
-li:hover{
+.c:hover{
     transform: translateY(-10px);
 }
 

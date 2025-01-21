@@ -24,7 +24,6 @@ const Home = () =>{
   return(
   <div style={{margin:"0px",width:"100vw",boxSizing:"border-box"}}>
   <div className='back'>
-    <Header />
     <div className='first-part'>
       <div className='first-inner-container'>
         <h1 style={{marginBottom:"40px"}}>
@@ -84,7 +83,6 @@ const Home = () =>{
       <button style={{height:"30px",padding:"5px" ,marginTop:"60px",marginBottom:"30px",backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}><a style={{color:"white"}} href="https://drive.google.com/file/d/109FhTASGhJ57ryRxBHtLLPdpuPAePEwV/view?usp=sharing" > <FaDownload/> Resume</a></button>
       
     </div>
-    <Footer/>
 </div>
 );
 }
