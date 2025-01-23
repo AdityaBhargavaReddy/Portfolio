@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
     
-      <BrowserRouter>
+      <BrowserRouter >
         <Header/>
         <Routes>
           <Route exact path="/" element={<Home />} />

@@ -9,7 +9,7 @@ const Footer=()=>(
        <div className=' wave1 '></div>
         <footer>
         <ul style={{ listStyleType: 'none', padding: 0, display: 'flex',justifyContent:"center", gap: '10px'}}>
-      <li style={{marginLeft:"40px"}} className="c" >
+      <li style={{marginLeft:"30px"}} className="c" >
         <a  href="https://www.instagram.com/aditya_bhargava_reddy?igsh=MXhtNmk1YWc1bWxqag=="   rel="noreferrer" target="_blank" >
           <FaInstagram size={30} color="#E1306C" />
         </a>
@@ -27,11 +27,13 @@ const Footer=()=>(
       </li>
     </ul>
         </footer>
-        <nav className="navigation-bar" style={{justifyContent:"center",background:"hsl(229, 82.10%, 62.70%)",paddingBottom:"40px"}}>
+        <span className="h" style={{ position:"relative",textAlign:"center",backgroundColor:"hsl(229, 82.10%, 62.70%)"}}>Copyright © Adi.. 2025. All rights reserved.</span>
+        <nav className="navigation-bar" style={{marginLeft:"200px", justifyContent:"center",background:"hsl(229, 82.10%, 62.70%)",paddingBottom:"40px"}}>
                     <Link className="link" to="/"style={{color:"black",textDecoration:"none"}}><p>Home</p></Link>
                     <Link className="link" to="/skills" style={{color:"black",textDecoration:"none"}}><p>Skills</p></Link>
                     <Link className="link" to="/projects" style={{color:"black",textDecoration:"none"}}><p>Projects</p></Link>
                     <Link className="link" to="/about" style={{color:"black",textDecoration:"none"}}><p>About</p></Link>
+                    <Link className="link" to="/experience" style={{color:"black",textDecoration:"none"}}><p >Experience</p></Link>
                 </nav>
     </div>
 )

@@ -24,7 +24,7 @@ const Home = () =>{
   
   
   return(
-  <div style={{margin:"0px",width:"100vw",boxSizing:"border-box"}}>
+  <div style={{overflowX:"hidden"}}>
   <div className='back'>
     <div className='first-part'>
       <div className='first-inner-container'>
@@ -71,7 +71,7 @@ const Home = () =>{
       <button style={{height:"35px",width:"100px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
     </div>
     </div>
-    <div className="skills-container" style={{boxSizing:"border-box",overflow:"hidden"}}>
+    <div className="skills-container" style={{boxSizing:"border-box",margin:'0px',overflow:"hidden"}}>
       <h2 className="skills-title">My Skills</h2>
       <div className="skills-list" style={{marginLeft:"150px"}}>
         {skills.map((skill, index) => (

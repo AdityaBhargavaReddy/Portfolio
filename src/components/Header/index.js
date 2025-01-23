@@ -6,8 +6,8 @@ import { GiSkills } from 'react-icons/gi';
 import {Link} from 'react-router-dom'
 class Header extends Component {
     render(){
-        return(<div >
-                <nav className="navigation-bar">
+        return(<div style={{overflowX:"hidden"}}>
+                <nav className="navigation-bar"style={{overflowX:"hidden"}}>
                     <div className="name-section">
                         <h1 className="name">Aditya Bhargava Reddy Karri</h1>  
                         <h1 className="Portfolio">Portfolio</h1>                  </div>

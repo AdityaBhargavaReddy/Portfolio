@@ -168,3 +168,39 @@ img {
         border-color: #b4d8f1;
     }
   }
+
+
+
+
+
+
+ p{
+   
+    animation: fadeIn 1.5s ;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translatex(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h1,div{
+    animation: k 1.5s;
+
+  }
+
+  @keyframes k {
+    from{
+      opacity: 0.8;
+      transform: translatey(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
