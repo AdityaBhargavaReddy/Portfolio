@@ -8,7 +8,7 @@ const Footer=()=>(
        <div className='wave'></div>
        <div className=' wave1 '></div>
         <footer>
-        <ul style={{ marginLeft:"60px",listStyleType: 'none', padding: 0, display: 'flex',justifyContent:"center",alignContent:"center" ,gap: '10px'}}>
+        <ul style={{ marginLeft:"30px",listStyleType: 'none', padding: 0, display: 'flex',justifyContent:"center",alignContent:"center" ,gap: '10px'}}>
       <li style={{marginLeft:"30px"}} className="c" >
         <a  href="https://www.instagram.com/aditya_bhargava_reddy?igsh=MXhtNmk1YWc1bWxqag=="   rel="noreferrer" target="_blank" >
           <FaInstagram size={30} color="#E1306C" />

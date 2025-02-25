@@ -17,7 +17,7 @@ const ContactForm = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    
 
     // Basic validation
     let validationErrors = {};
@@ -48,7 +48,7 @@ const ContactForm = () => {
         <div style={{}}>
       <h2>Contact Me</h2>
       {submitted && <p className="success-message">Message sent successfully! ✅</p>}
-      <form action="https://formsubmit.co/el/koxija" method="POST"  onSubmit={handleSubmit} className="contact-form" >
+      <form action="https://formsubmit.co/adityabhargavareddy2005@gmail.com" method="POST"  onSubmit={handleSubmit} className="contact-form" >
         <div className="input-group">
           <label>Name</label>
           <input
