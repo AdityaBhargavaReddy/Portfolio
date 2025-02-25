@@ -1,9 +1,12 @@
-
+import { useNavigate } from 'react-router-dom';
 import './app.css';
+
 
 import{FaDownload} from 'react-icons/fa'
 
 const Home = () =>{
+  const Navigate = useNavigate();
+
   const skills = [
     { name: 'HTML', logo: 'https://www.onlinecasinos.org.uk/wp-content/uploads/CASINO/Articles/html5-logo.png' },
     { name: 'CSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg' },
@@ -20,11 +23,19 @@ const Home = () =>{
    
   ];
   
-  
+  const getAbout=()=>{
+    Navigate('/about')
+  }
+
+  const getProjects=()=>{
+    Navigate('/projects')
+  }
   
   
   return(
+   
   <div style={{overflowX:"hidden"}}>
+    
   <div className='back'>
     <div className='first-part'>
       <div className='first-inner-container'>
@@ -41,7 +52,7 @@ const Home = () =>{
       />
     </div>
     <div style={{textAlign:"center"}} >
-      <button style={{height:"35px",width:"100px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
+      <button onClick={getAbout} style={{height:"35px",width:"100px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
     </div>
   </div>
 
@@ -49,7 +60,7 @@ const Home = () =>{
   <h2 className='second-head'>Let’s Create Something Amazing Together!</h2>
   <p2 style={{textAlign:"center",marginTop:"30px"}} className="second-para">Check out my projects or get in touch to discuss your idea.</p2>
   <div style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"50vh",alignItems:"center"}}>
-  <button style={{height:"35px",width:"100px",padding:"5px" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}><a style={{color:"white"}} href="mailto:bhargavareddy2005@gmail.com" >Contact Me</a></button>
+  <button   style={{height:"35px",width:"100px",padding:"5px" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}><a style={{color:"white"}} href="mailto:bhargavareddy2005@gmail.com" >Contact Me</a></button>
   
   </div>
   
@@ -68,7 +79,7 @@ const Home = () =>{
         My goal is to contribute to innovative projects that make a meaningful impact while continuously expanding my technical expertise.
       </p>
       <div style={{textAlign:"center",marginTop:"40px",}} >
-      <button style={{height:"35px",width:"100px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
+      <button  onClick={getProjects} style={{height:"35px",width:"100px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
     </div>
     </div>
     <div className="skills-container" style={{boxSizing:"border-box",margin:'0px',overflow:"hidden"}}>

@@ -27,7 +27,7 @@ const Footer=()=>(
       </li>
     </ul>
         </footer>
-        <span className="h" style={{ position:"relative",textAlign:"center",backgroundColor:"hsl(229, 82.10%, 62.70%)"}}>Copyright © Adi.. 2025. All rights reserved.</span>
+        <span className="h" style={{ position:"relative",textAlign:"center",backgroundColor:"hsl(229, 82.10%, 62.70%)"}}>Copyright © Adi<span style={{letterSpacing:"0px"}}>...</span> <span className='big'>🖤</span> 2025. All rights reserved.</span>
         <nav className="navigation-bar" style={{marginLeft:"200px", justifyContent:"center",background:"hsl(229, 82.10%, 62.70%)",paddingBottom:"40px"}}>
                     <Link className="link" to="/"style={{color:"black",textDecoration:"none"}}><p>Home</p></Link>
                     <Link className="link" to="/skills" style={{color:"black",textDecoration:"none"}}><p>Skills</p></Link>

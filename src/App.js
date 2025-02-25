@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Footer from './components/Footer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Experience from './components/Experience';
+import ContactForm from './components/ContactForm'
 
 class App extends Component {
   render() {
@@ -15,7 +16,9 @@ class App extends Component {
       <BrowserRouter >
         <Header/>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+       
+          <Route exact path="/contact" element={<ContactForm />} />
+          <Route exact path="/" element={<Home />} />      
           <Route exact path="/about" element={<About />} />
           <Route exact path="/skills" element={<Skills />} />
           <Route exact path="/projects" element={<Projects />} />
