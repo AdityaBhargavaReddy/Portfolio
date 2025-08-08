@@ -27,13 +27,14 @@ const Footer=()=>(
       </li>
     </ul>
         </footer>
-        <span className="h" style={{ position:"relative",textAlign:"center",backgroundColor:"hsl(229, 82.10%, 62.70%)"}}>Copyright © Adi<span style={{letterSpacing:"0px"}}>...</span> <span className='big'>🖤</span> 2025. All rights reserved.</span>
+        <span className="h" style={{ position:"relative",letterSpacing:"1.5px",textAlign:"center",backgroundColor:"hsl(229, 82.10%, 62.70%)"}}>Copyright © Adi<span style={{letterSpacing:"0px"}}>...</span> <span style={{letterSpacing:"2px"}} className='big'>   🖤   </span>   2025. All rights reserved.</span>
         <nav className="navigation-bar" style={{marginLeft:"200px", justifyContent:"center",background:"hsl(229, 82.10%, 62.70%)",paddingBottom:"40px"}}>
                     <Link className="link" to="/"style={{color:"black",textDecoration:"none"}}><p>Home</p></Link>
+                    <Link className="link" to="/about" style={{color:"black",textDecoration:"none"}}><p>About</p></Link>
                     <Link className="link" to="/skills" style={{color:"black",textDecoration:"none"}}><p>Skills</p></Link>
                     <Link className="link" to="/projects" style={{color:"black",textDecoration:"none"}}><p>Projects</p></Link>
-                    <Link className="link" to="/about" style={{color:"black",textDecoration:"none"}}><p>About</p></Link>
                     <Link className="link" to="/experience" style={{color:"black",textDecoration:"none"}}><p >Experience</p></Link>
+                    <Link className="link" to="/contact" style={{color:"black",textDecoration:"none"}}><p>Contact Me</p></Link>
                 </nav>
     </div>
 )

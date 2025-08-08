@@ -34,15 +34,15 @@ const Home = () =>{
   
   return(
    
-  <div style={{overflowX:"hidden"}}>
+  <div style={{overflowX:"hidden", width:"100%"}}>
     
   <div className='back'>
     <div className='first-part'>
       <div className='first-inner-container'>
-        <h1 style={{marginBottom:"40px"}}>
+        <h1 style={{marginBottom:"40px", wordBreak:"break-word", overflowWrap:"break-word"}}>
           Hello, I'm Aditya Bhargava Reddy Karri, <br /> and I'm a <br/><span className='typig-effect'> MERN Stack Developer</span>
         </h1>
-        <p>
+        <p style={{wordBreak:"break-word", overflowWrap:"break-word", hyphens:"auto"}}>
         I'm a skilled <b>MERN Stack Developer</b> with over a year of experience in building dynamic and responsive web applications. My expertise spans web design, front-end development, and seamlessly integrating back-end data, and many more...
         </p>
       </div>
@@ -56,25 +56,25 @@ const Home = () =>{
     </div>
   </div>
 
-  <div  className='second-inner-container' style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"60vh",alignItems:"center",alignSelf:"center"}}>
-  <h2 className='second-head'>Let’s Create Something Amazing Together!</h2>
-  <p2 style={{textAlign:"center",marginTop:"30px"}} className="second-para">Check out my projects or get in touch to discuss your idea.</p2>
+  <div  className='second-inner-container' style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"60vh",alignItems:"center",alignSelf:"center", width:"100%"}}>
+  <h2 className='second-head' style={{wordBreak:"break-word", overflowWrap:"break-word", textAlign:"center"}}>Let's Create Something Amazing Together!</h2>
+  <p2 style={{textAlign:"center",marginTop:"30px", wordBreak:"break-word", overflowWrap:"break-word"}} className="second-para">Check out my projects or get in touch to discuss your idea.</p2>
   <div style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"50vh",alignItems:"center"}}>
   <button   style={{height:"35px",width:"100px",padding:"5px" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}><a style={{color:"white"}} href="mailto:bhargavareddy2005@gmail.com" >Contact Me</a></button>
   
   </div>
   
 </div>
-<div className='second-inner-container third' style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"60vh",alignItems:"center",alignSelf:"center"}}>
+<div className='second-inner-container third' style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"60vh",alignItems:"center",alignSelf:"center", width:"100%"}}>
 
-      <h2 className='second-head third-head'>About Me</h2>
+      <h2 className='second-head third-head' style={{wordBreak:"break-word", overflowWrap:"break-word", textAlign:"center"}}>About Me</h2>
       <hr style={{height:"2px",backgroundColor:"black"}}/>
-      <p style={{marginTop:"30px"}} className="third-para">
+      <p style={{marginTop:"30px", wordBreak:"break-word", overflowWrap:"break-word", hyphens:"auto", textAlign:"center"}} className="third-para">
         I am an enthusiastic and self-motivated <b>MERN Stack Developer</b> with a passion for creating modern, user-friendly web applications. 
         Proficient in React for building dynamic front-end interfaces and experienced in managing back-end operations using Node.js, Express, and MongoDB, 
         I focus on delivering scalable and efficient solutions.
       </p>
-      <p className="third-para">
+      <p className="third-para" style={{wordBreak:"break-word", overflowWrap:"break-word", hyphens:"auto", textAlign:"center"}}>
        Working as <b>Teaching Assistant at NxtWave</b>, I play a pivotal role in facilitating the learning process for students pursuing technical skills. 
         My goal is to contribute to innovative projects that make a meaningful impact while continuously expanding my technical expertise.
       </p>
@@ -82,13 +82,13 @@ const Home = () =>{
       <button  onClick={getProjects} style={{height:"35px",width:"100px",padding:"5px",color:"white" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}>Know More </button>
     </div>
     </div>
-    <div className="skills-container" style={{boxSizing:"border-box",margin:'0px',overflow:"hidden"}}>
-      <h2 className="skills-title">My Skills</h2>
-      <div className="skills-list" style={{marginLeft:"150px"}}>
+    <div className="skills-container" style={{boxSizing:"border-box",margin:'0px',overflow:"hidden", width:"100%"}}>
+      <h2 className="skills-title" style={{wordBreak:"break-word", overflowWrap:"break-word", textAlign:"center"}}>My Skills</h2>
+      <div className="skills-list" style={{justifyContent:"center", width:"100%"}}>
         {skills.map((skill, index) => (
-          <div className="skill-item" key={index}>
+          <div className="skill-item" key={index} style={{wordBreak:"break-word", overflowWrap:"break-word"}}>
             <img src={skill.logo} alt={`${skill.name} logo`} className="skill-logo" />
-            <p className="skill-name">{skill.name}</p>
+            <p className="skill-name" style={{wordBreak:"break-word", overflowWrap:"break-word", textAlign:"center"}}>{skill.name}</p>
           </div>
         ))}
       </div>

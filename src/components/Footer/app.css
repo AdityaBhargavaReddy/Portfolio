@@ -7,6 +7,8 @@
     background-color: #f9f9f9;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 footer{
@@ -16,15 +18,12 @@ footer{
     width:100%;
     height: 100px;
     background-color: rgb(135, 181, 255);
-
     background-image: linear-gradient(to top,rgb(87, 109, 250),rgb(141, 183, 252));
     padding: 30px 50px;
 }
 
 .c{
-  
-  
-
+    transition: transform 0.3s ease;
 }
 
 .c:hover{
@@ -34,13 +33,14 @@ footer{
 .wave{
     width: 100%;
     height: 360px;
- 
     position: absolute;
     background: url('https://res.cloudinary.com/dosqewmuo/image/upload/v1737395516/wave_aymzfy.png');
     animation: animateWave 3.5s linear infinite;
     background-size: 1000px 130px;
     opacity: 0.58;
-
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .big{
@@ -60,7 +60,6 @@ footer{
     100%{
        font-size: 15px ;
     }
-    
 }
 
 @keyframes animateWave {
@@ -72,14 +71,11 @@ footer{
     }
 }
 
-
 .link{
     padding-left: 20px;
 }
 
-
 .h{
-
    width: 100%;
    color: rgb(82, 82, 82);
    font-size: 14px;
@@ -88,5 +84,269 @@ footer{
     text-align: center;
   font-weight: none;
     font-family: Arial, sans-serif;
+}
 
+/* Responsive adjustments - improved for small devices */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 20px 30px;
+        height: 80px;
+    }
+    
+    .h {
+        font-size: 13px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        text-align: center;
+    }
+    
+    .link {
+        padding-left: 15px;
+    }
+    
+    /* Improved wave for medium screens */
+    .wave {
+        height: 320px;
+        background-size: 900px 110px;
+        opacity: 0.58;
+        animation-duration: 3.5s;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 15px 20px;
+        height: 70px;
+    }
+    
+    .h {
+        font-size: 11px;
+        letter-spacing: 0.3px;
+        word-spacing: 1px;
+        padding: 3px 5px;
+        line-height: 1.2;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        text-align: center;
+    }
+    
+    .link {
+        padding-left: 8px;
+    }
+    
+    .body {
+        height: 50vh;
+    }
+    
+    /* Much better wave for mobile */
+    .wave {
+        height: 280px;
+        background-size: 700px 90px;
+        opacity: 0.58;
+        animation-duration: 3.5s;
+        bottom: 0;
+    }
+    
+    /* Enhanced text alignment on mobile */
+    .navigation-bar {
+        margin-left: 0 !important;
+        justify-content: center !important;
+        padding-bottom: 20px !important;
+        flex-wrap: wrap;
+        gap: 5px;
+        text-align: center;
+    }
+    
+    /* Enhanced social icons on mobile */
+    footer ul {
+        margin-left: 0 !important;
+        gap: 25px !important;
+        justify-content: center;
+        display: flex;
+    }
+    
+    footer li {
+        margin-left: 0 !important;
+    }
+    
+    /* Enhanced text overflow prevention */
+    .navigation-bar p {
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 80px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    footer {
+        padding: 8px 12px;
+        height: 55px;
+    }
+    
+    .h {
+        font-size: 10px;
+        letter-spacing: 0.2px;
+        word-spacing: 0.5px;
+        padding: 2px 3px;
+        line-height: 1.1;
+        text-align: center;
+    }
+    
+    .link {
+        padding-left: 5px;
+    }
+    
+    /* Compact wave for very small screens */
+    .wave {
+        height: 220px;
+        background-size: 600px 70px;
+        opacity: 0.58;
+        animation-duration: 3.5s;
+        bottom: 0;
+    }
+    
+    /* Enhanced compact navigation */
+    .navigation-bar {
+        margin-left: 0 !important;
+        justify-content: center !important;
+        padding-bottom: 15px !important;
+        gap: 3px;
+        text-align: center;
+    }
+    
+    /* Enhanced compact social icons */
+    footer ul {
+        margin-left: 0 !important;
+        gap: 20px !important;
+        justify-content: center;
+        display: flex;
+    }
+    
+    footer li {
+        margin-left: 0 !important;
+    }
+    
+    /* Enhanced icon sizes */
+    footer svg {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    
+    /* Enhanced ultra-compact text */
+    .navigation-bar p {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 60px;
+        text-align: center;
+    }
+}
+
+/* Enhanced fix for medium-small screens */
+@media screen and (max-width: 600px) and (min-width: 481px) {
+    .wave {
+        height: 300px;
+        background-size: 800px 100px;
+        opacity: 0.58;
+        animation-duration: 3.5s;
+        bottom: 0;
+    }
+    
+    .navigation-bar {
+        margin-left: 30px !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+    
+    .h {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        word-spacing: 2px;
+        text-align: center;
+    }
+}
+
+/* Enhanced breakpoint for very low devices */
+@media screen and (max-width: 320px) {
+    .wave {
+        height: 180px;
+        background-size: 500px 60px;
+        opacity: 0.58;
+        animation-duration: 3.5s;
+        bottom: 0;
+    }
+    
+    .h {
+        font-size: 9px;
+        letter-spacing: 0.1px;
+        word-spacing: 0.3px;
+        text-align: center;
+    }
+    
+    .navigation-bar p {
+        font-size: 9px;
+        max-width: 50px;
+        text-align: center;
+    }
+    
+    footer svg {
+        width: 22px !important;
+        height: 22px !important;
+    }
+    
+    footer {
+        padding: 6px 10px;
+        height: 50px;
+    }
+    
+    /* Enhanced social icons for very small screens */
+    footer ul {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+/* Additional ultra-low device support */
+@media screen and (max-width: 280px) {
+    .wave {
+        height: 150px;
+        background-size: 400px 50px;
+        opacity: 0.58;
+        animation-duration: 3.5s;
+        bottom: 0;
+    }
+    
+    .h {
+        font-size: 8px;
+        letter-spacing: 0.05px;
+        word-spacing: 0.2px;
+        text-align: center;
+    }
+    
+    .navigation-bar p {
+        font-size: 8px;
+        max-width: 45px;
+        text-align: center;
+    }
+    
+    footer svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    
+    footer {
+        padding: 5px 8px;
+        height: 45px;
+    }
+    
+    /* Enhanced social icons for ultra-small screens */
+    footer ul {
+        justify-content: center;
+        display: flex;
+    }
 }
