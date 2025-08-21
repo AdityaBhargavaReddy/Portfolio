@@ -84,7 +84,7 @@ const Home = () =>{
     </div>
     <div className="skills-container" style={{boxSizing:"border-box",margin:'0px',overflow:"hidden", width:"100%"}}>
       <h2 className="skills-title" style={{wordBreak:"break-word", overflowWrap:"break-word", textAlign:"center"}}>My Skills</h2>
-      <div className="skills-list" style={{justifyContent:"center", width:"100%" ,marginLeft:"100px" }}>
+      <div className="skills-list" style={{justifyContent:"center", width:"100%" ,marginLeft:"180px" }}>
         {skills.map((skill, index) => (
           <div className="skill-item" key={index} style={{wordBreak:"break-word", overflowWrap:"break-word"}}>
             <img src={skill.logo} alt={`${skill.name} logo`} className="skill-logo" />
