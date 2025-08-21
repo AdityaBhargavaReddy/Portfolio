@@ -13,13 +13,12 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: "" }); // Clear errors on input
+    setErrors({ ...errors, [e.target.name]: "" });
   };
 
   const handleSubmit = (e) => {
-    
+    e.preventDefault(); // ✅ prevents page refresh
 
-    // Basic validation
     let validationErrors = {};
     if (!formData.name.trim()) validationErrors.name = "Name is required";
     if (!formData.email.trim()) {
@@ -34,64 +33,65 @@ const ContactForm = () => {
       return;
     }
 
-    // Simulate form submission
     setSubmitted(true);
     setFormData({ name: "", email: "", message: "" });
 
-    setTimeout(() => setSubmitted(false), 3000); // Reset after 3 seconds
+    setTimeout(() => setSubmitted(false), 3000);
   };
 
   return (
     <div className="x">
-        <div style={{height:"20px"}}></div>
-    <div className="contact-container"style={{padding:'200px'}} >
-        <div style={{}}>
-      <h2>Contact Me</h2>
-      {submitted && <p className="success-message">Message sent successfully! ✅</p>}
-      <form action="https://formsubmit.co/adityabhargavareddy2005@gmail.com" method="POST"  onSubmit={handleSubmit} className="contact-form" >
-        <div className="input-group">
-          <label>Name</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-            className={errors.name ? "error" : ""}
-          />
-          {errors.name && <p className="error-text">{errors.name}</p>}
-        </div>
+      <div className="contact-container">
+        <h2>Contact Me</h2>
+        {submitted && <p className="success-message">Message sent successfully! ✅</p>}
 
-        <div className="input-group">
-          <label>Email</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Your Email"
-            className={errors.email ? "error" : ""}
-          />
-          {errors.email && <p className="error-text">{errors.email}</p>}
-        </div>
+        <form
+          action="https://formsubmit.co/adityabhargavareddy2005@gmail.com"
+          method="POST"
+          onSubmit={handleSubmit}
+          className="contact-form"
+        >
+          <div className="input-group">
+            <label>Name</label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your Name"
+              className={errors.name ? "error" : ""}
+            />
+            {errors.name && <p className="error-text">{errors.name}</p>}
+          </div>
 
-        <div className="input-group">
-          <label>Message</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Your Message"
-            className={errors.message ? "error" : ""}
-          />
-          {errors.message && <p className="error-text">{errors.message}</p>}
-          
-        </div>
+          <div className="input-group">
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Your Email"
+              className={errors.email ? "error" : ""}
+            />
+            {errors.email && <p className="error-text">{errors.email}</p>}
+          </div>
 
-        <button type="submit" className="submit-button">Send Message</button>
-      </form>
-    </div>
-    </div>
+          <div className="input-group">
+            <label>Message</label>
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Your Message"
+              className={errors.message ? "error" : ""}
+            />
+            {errors.message && <p className="error-text">{errors.message}</p>}
+          </div>
+
+          <button type="submit" className="submit-button">Send Message</button>
+        </form>
+      </div>
     </div>
   );
 };

@@ -28,19 +28,23 @@ const skills = [
   },
   {
     category: 'Programming Languages',
-    skills: ['JavaScript', 'Python','C','C++'],
+    skills: ['Python','C','C++','JavaScript','C#','Java' ],
   },
   {
     category: 'Data Structures & Algorithms',
     skills: [
-      'Elementary DSA',
+      'Advanced DSA',
       'Array & String Manipulations',
-      'Basic Sorting & Searching Algorithms',
+      'Sorting & Searching Algorithms',
+      'Tree & Graph Algorithms',
+      'Dynamic Programming',
+      'Linked Lists & Stacks',
+      'Queues & Hashing',
     ],
   },
   {
     category: ' Tools  &    Technologies',
-    skills: ['Git', 'GitHub', 'VS Code', 'Netlify','Vercel'],
+    skills: ['Git', 'GitHub', 'VS Code', 'Netlify','Vercel','Streamlit'],
   },
  
   {

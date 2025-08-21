@@ -20,6 +20,8 @@ const Experience = () => {
               <li>Learning 4.0 Technologies with a focus on industry-ready practices.</li>
               <li>Building expertise in Full Stack Development (MERN stack).</li>
               <li>Hands-on learning with projects and real-world problem-solving.</li>
+              <li>Learning Advanced Data Structures and Algorithms</li>
+              <li>Learning Artificial Intelligence </li>
             </ul>
           </div>
         </div>
@@ -32,9 +34,9 @@ const Experience = () => {
             <h3 className="job-title">Teaching Assistant</h3>
             <p className="company-location">NxtWave, Remote | December 2024 – Present</p>
             <ul className="responsibilities">
-              <li>Resolved 70+ students' doubts, providing effective explanations and solutions.</li>
-              <li>Reviewed and improved students' code, ensuring adherence to best practices.</li>
-              <li>Mentored students in Python, SQL, and DSA concepts.</li>
+              <li>Resolved 100+ students doubts, providing effective explanations and solutions.</li>
+              <li>Reviewed and improved students code, ensuring adherence to best practices.</li>
+              <li>Mentored students in Node, React and DSA concepts.</li>
             </ul>
           </div>
         </div>
@@ -47,10 +49,10 @@ const Experience = () => {
         </div>
         <ul className="achievements-list">
           <li>
-        Maintained a learning streak of over <strong>444+ days</strong> on the NxtWave platform, showcasing dedication and consistency.
+        Maintained a learning streak of  <strong>540 days</strong> on the NxtWave platform, showcasing dedication and consistency.
           </li>
           <li>
-            Solved over <strong>600 coding problems</strong> in Python and completed <strong>20+ projects</strong>, demonstrating advanced problem-solving skills.
+            Solved over <strong>1300+ coding problems</strong>  and completed <strong>20+ projects</strong> on NxtWave, demonstrating advanced problem-solving skills.
           </li>
         </ul>
     

@@ -56,16 +56,16 @@ const Home = () =>{
     </div>
   </div>
 
-  <div  className='second-inner-container' style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"60vh",alignItems:"center",alignSelf:"center", width:"100%"}}>
+  <div  className='second-inner-container' style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",alignSelf:"center", width:"100%"}}>
   <h2 className='second-head' style={{wordBreak:"break-word", overflowWrap:"break-word", textAlign:"center"}}>Let's Create Something Amazing Together!</h2>
   <p2 style={{textAlign:"center",marginTop:"30px", wordBreak:"break-word", overflowWrap:"break-word"}} className="second-para">Check out my projects or get in touch to discuss your idea.</p2>
-  <div style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"50vh",alignItems:"center"}}>
+  <div className='second-div' style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"50vh",alignItems:"center"}}>
   <button   style={{height:"35px",width:"100px",padding:"5px" ,backgroundColor:"rgb(196, 101, 251)",border:"none",borderRadius:"5px"}}><a style={{color:"white"}} href="mailto:bhargavareddy2005@gmail.com" >Contact Me</a></button>
   
   </div>
   
 </div>
-<div className='second-inner-container third' style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"60vh",alignItems:"center",alignSelf:"center", width:"100%"}}>
+<div className='second-inner-container third' style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"70vh",alignItems:"center",alignSelf:"center", width:"100%"}}>
 
       <h2 className='second-head third-head' style={{wordBreak:"break-word", overflowWrap:"break-word", textAlign:"center"}}>About Me</h2>
       <hr style={{height:"2px",backgroundColor:"black"}}/>
@@ -84,7 +84,7 @@ const Home = () =>{
     </div>
     <div className="skills-container" style={{boxSizing:"border-box",margin:'0px',overflow:"hidden", width:"100%"}}>
       <h2 className="skills-title" style={{wordBreak:"break-word", overflowWrap:"break-word", textAlign:"center"}}>My Skills</h2>
-      <div className="skills-list" style={{justifyContent:"center", width:"100%"}}>
+      <div className="skills-list" style={{justifyContent:"center", width:"100%" ,marginLeft:"100px" }}>
         {skills.map((skill, index) => (
           <div className="skill-item" key={index} style={{wordBreak:"break-word", overflowWrap:"break-word"}}>
             <img src={skill.logo} alt={`${skill.name} logo`} className="skill-logo" />

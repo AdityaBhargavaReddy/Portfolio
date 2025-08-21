@@ -54,3 +54,36 @@
     text-decoration: underline;
   }
   
+
+  @media  screen and (max-width:768px) {
+    .about-container {
+      padding: 1rem;
+      font-size: 18px;
+    }
+    
+    h1, h2 {
+      font-size: 24px;
+    }
+    
+    p {
+      font-size: 15px;
+    }
+    
+    .skills-list, .interests-list {
+      flex-direction: column;
+      align-items: flex-start;
+      ;
+    }
+    .skills-list li, .interests-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .skills-list li::before, .interests-list li::before {
+      content: "•";
+      margin-right: 0.5rem;
+      color: #0e0f01;
+    }
+    .skills-list li, .interests-list li {
+      font-size: 17px;
+    }
+  }

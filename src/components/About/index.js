@@ -12,7 +12,7 @@ const About = () => {
         Hi, I'm <strong>Aditya Bhargav Reddy</strong>, a passionate web developer specializing in the MERN (MongoDB, Express, React, Node.js) stack. I have a strong foundation in building dynamic and user-friendly web applications.
       </p>
       <p style={{margin:"10px"}}>
-        In addition to web development, I have hands-on experience with <strong>Python</strong> for scripting and problem-solving. I also have a solid understanding of elementary <strong>Data Structures and Algorithms (DSA)</strong>, which helps me write efficient and optimized code.
+        In addition to web development, I have hands-on experience with <strong>Python</strong> for scripting and problem-solving. I also have a solid understanding <strong>Data Structures and Algorithms (DSA)</strong>, which helps me write efficient and optimized code.
       </p>
       <p style={{margin:"10px"}}>
         I'm always eager to learn new technologies, take on challenges, and contribute to meaningful projects. Currently, I'm looking for opportunities to apply my skills and grow as a developer.
@@ -20,7 +20,7 @@ const About = () => {
     </div>
     </div>
     <div className="about-container">
-      <h2>Tools and Technologies Known</h2>
+      <h2 style={{textAlign:"center"}}>Tools and Technologies Known</h2>
       <ul style={{listStyle:"disc",marginTop:"50px",marginBottom:"30px",fontSize:"20px",padding:"10px",display:"flex",flexDirection:"column"}} className="skills-list">
         <li style={{display:"flex",alignItems:"center"}}> Frontend<span style={{width:"5px"}}></span> <FaDesktop/> : React.js, HTML5, CSS3, JavaScript (ES6+), Bootstrap</li>
         <li style={{display:"flex",alignItems:"center"}}>Backend <span style={{width:"5px"}}></span> <FaServer />  : Node.js, Express.js</li>
